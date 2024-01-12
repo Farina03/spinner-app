@@ -1,0 +1,13 @@
+.result-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    width: 500px;
+}
+.result-inner-div {
+    height: 30px;
+    width: auto;
+    border: .5px solid gray;
+    font-size: 14px;
+    color: gray;
+}
