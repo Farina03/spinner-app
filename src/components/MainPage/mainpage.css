@@ -1,4 +1,13 @@
 .main-div {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.input-output-flexbox {
+    display: flex;
+    column-gap: 20px;
+    /* align-items: center; */
+    justify-content: center;
 }

@@ -11,3 +11,9 @@
     font-size: 14px;
     color: gray;
 }
+.result-outer-div {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    /* display: flex; */
+}

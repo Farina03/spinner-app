@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import './inputform.css'
 
-const InputForm = ({allResult, setAllResult}) => {
+const InputForm = ({allResult, setAllResult, setSpinBoolean, setLastUserInfo}) => {
     const [emailData, setEmailData] = useState({
         email: "",
         username: ""
@@ -21,28 +22,23 @@ const InputForm = ({allResult, setAllResult}) => {
         let {email, username} = emailData
         if(email === "" || username === "")
         {
-            console.log("fill out first")
+            alert("fill out first")
         }
         else if(allResult[email])
-            console.log("Already exists")
+            alert("Already exists")
         else {
-        setAllResult(prevItem => {
-            return (
-                // prevItem[email] ? console.log("already exists") :
-                {...prevItem,
-                [email] : { "email": email,
-                            "username" : username,
-                            "discount" : 40 }}
-            )
-        }) }
+        setSpinBoolean(true)
+        setLastUserInfo(emailData)
+        }
         setEmailData({
             email:"",
             username:""
         })
     }
     console.log(allResult)
+    //"discount" : 40 
   return (
-    <div>
+    <div className='user-input-outer-div'>
         <input className='useremail' type='email' name="email" value={emailData.email} placeholder='Enter your email'
                 onChange={handleChange} />
         <input type='text' name="username" value={emailData.username} placeholder='Enter your name'

@@ -1,0 +1,51 @@
+.wheel-input-page {
+    display: flex;
+    /* flex-direction: column; */
+    /* row-gap: 10px; */
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+}
+.input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    border: .5px solid gray;
+    padding: 20px;
+}
+input {
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    border: .5px solid gray;
+    cursor: pointer;
+}
+.color-input {
+    height: 30px;
+    width: 50px;
+    padding: 0;
+    border: .5px solid gray;
+}
+label {
+    color: gray;
+}
+.dropdown-div {
+    height: 30px;
+    width: 80px;
+}
+button {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: .5px solid gray;
+    transition: all .3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(110%);
+    background-color: gray;
+    color: white;
+}
